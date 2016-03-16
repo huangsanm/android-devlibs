@@ -13,8 +13,33 @@
     tools:context="com.huashengmi.devlibs.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/my_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fadeDuration="300"
+        app:actualImageScaleType="focusCrop"
+        app:placeholderImage="@color/colorPrimaryDark"
+        app:placeholderImageScaleType="fitCenter"
+        app:failureImage="@color/colorAccent"
+        app:failureImageScaleType="centerInside"
+        app:retryImage="@color/colorPrimary"
+        app:retryImageScaleType="centerCrop"
+        app:progressBarImageScaleType="centerInside"
+        app:progressBarAutoRotateInterval="1000"
+        app:backgroundImage="@color/colorPrimaryDark"
+        app:overlayImage="@color/colorAccent"
+        app:pressedStateOverlayImage="@color/colorPrimary"
+        app:roundAsCircle="false"
+        app:roundedCornerRadius="1dp"
+        app:roundTopLeft="true"
+        app:roundTopRight="false"
+        app:roundBottomLeft="false"
+        app:roundBottomRight="true"
+        app:roundWithOverlayColor="@color/colorAccent"
+        app:roundingBorderWidth="2dp"
+        app:roundingBorderColor="@color/colorPrimaryDark"
+        />
+
+
 </RelativeLayout>
